@@ -12,11 +12,27 @@ btOk.current.disabled = true
 return (
     <div style={{margin:'30px'}}>
     <form>
-    <input type="text" name="kw" placeholder="ค้นหา"
-    ref={textKw} onInput={onChangeKw}/>&nbsp;
-    <button ref={btOk} disabled>ตกลง</button>
+        <center>
+        <div className="mt-3 mx-auto p-3" style={{ width: '400px', background: '#cee' }}>
+      <div className="form-group mb-2">
+      <input
+          type="text"
+          id="login"
+          name="kw"
+          maxLength="20"
+          placeholder="ค้นหา"
+          ref={textKw}
+          onInput={onChangeKw} // or onChange if you prefer
+          className="form-control form-control-sm"
+        />
+        <br></br>
+        <button type="button" ref={btOk} className="btn btn-primary" disabled>ตกลง</button>
+    </div>
+    </div>
+    </center>
     </form>
     </div>
+
 )
 }
     

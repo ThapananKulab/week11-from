@@ -1,6 +1,7 @@
 import React from 'react';
 import FormSearch  from './form-search';
 import FormBootstrap from './form-bootstrap'
+import FormText from './form-text';
 
 export default function App() {
 
@@ -9,5 +10,8 @@ export default function App() {
   <br>
   </br>
   <FormBootstrap/>
+  <br>
+  </br>
+  <FormText/>
   </>
 }
